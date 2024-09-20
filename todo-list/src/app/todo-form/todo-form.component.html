@@ -1,0 +1,18 @@
+<div class="card shadow-lg mt-5 rounded-3 todo-form">
+  <div class="card-header text-center py-4 border-0">
+    <h1 class="display-6 fw-bold">TO DO LIST</h1>
+  </div>
+  
+  <div class="card-body p-4">
+    <ul class="list-group">
+      <li class="list-group-item mb-2 border rounded-3">
+        <div class="input-group">
+          <input type="text" class="form-control py-3 border-0" placeholder="Enter a new todo" [(ngModel)]="newTodo.todo" />
+          <button class="btn  border-0 bg-success" (click)="addTodo()">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

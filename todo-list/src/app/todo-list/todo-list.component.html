@@ -1,0 +1,10 @@
+<div class="card-body p-4 todo-list">
+  <ul class="list-group">
+    <li class="list-group-item mb-2 border py-3 rounded-3" *ngFor="let todo of todos">
+      <input class="border-0" type="text" [(ngModel)]="todo.todo">
+      <button class="float-end text-secondary " (click)="deleteTodo(todo.id)"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+      <button class="float-end second-check  " (click)="updateTodo(todo)"><i  class="fa fa-upload " aria-hidden="true"></i></button>
+      <input class="float-end  big-checkbox " type="checkbox" [(ngModel)]="todo.completed">
+    </li>
+  </ul>
+</div>
